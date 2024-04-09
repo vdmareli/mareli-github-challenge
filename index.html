@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protea flowers</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background: linear-gradient(
+          109.6deg,
+          rgb(255, 221, 225) 11.2%,
+          rgb(255, 255, 255) 92.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #b94e8a;
+        font-size: 45px;
+        font-weight: 600;
+      }
+      h2 {
+        text-align: center;
+        color: #d87ca1;
+        border: 1px solid #d87ca1;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 20px 0;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        background-color: #d87ca1;
+        color: white;
+        font-size: 18px;
+        padding: 20px 25px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px 60px;
+      }
+      .learnMore {
+        margin-top: 10px;
+        text-decoration: none;
+        color: #7d156d;
+        font-size: 13px;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 15px;
+      }
+      .sheCodes {
+        color: #7d156d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Protea Flower</h1>
+      <h2>
+        Proteas are a unique and iconic symbol of and national flower of South
+        Africa, representing the country's rich and diverse flora
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/219/original/shutterstock_213151405.jpg?1706800462"
+        alt="Protea flowers"
+      />
+      <p>
+        The <strong>protea flower</strong> needs fire to flourish. Proteas,
+        which are a type of fynbos, are referred to as a pyrophylic or
+        fire-loving vegetation, and in need to burn every few years to survive.
+        <br />
+        <br />
+        The king protea flower is large when opened and can grow to about 12
+        inches in diameter. Flower petals are stiff and tapered and are often
+        light-colored on the bottom and then become pink or red nearer to the
+        top.
+      </p>
+      <hr />
+      <a
+        href="https://en.wikipedia.org/wiki/Protea"
+        target="_blank"
+        class="learnMore"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buyButton">👉 Buy Proteas</button>
+      <p class="footer">
+        <em
+          >This page was built by
+          <a
+            href="https://www.linkedin.com/in/mareli-van-deventer-ca-sa-1b789b98"
+            target="_blank"
+          >
+            Mareli van Deventer
+          </a>
+          <br />
+          <span class="sheCodes"> Thanks to SheCodes! 👩‍💻</span>
+        </em>
+      </p>
+    </div>
+    <script>
+      function buyProteas() {
+        let name = prompt("What is your name?");
+        let country = prompt("What country do you live in?");
+        country = country.toLowerCase().trim();
+        if (country === "south africa") {
+          alert(
+            "You are in sunny South Africa, " +
+              name +
+              " - go buy some Proteas! 🌞"
+          );
+        } else {
+          alert(
+            "You're unfortunately a bit too far to send Proteas to, " +
+              name +
+              "😓"
+          );
+        }
+      }
+      let buyButton = document.querySelector(".buyButton");
+      buyButton.addEventListener("click", buyProteas);
+    </script>
+  </body>
+</html>
